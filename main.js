@@ -1,3 +1,6 @@
+document.body.ontouchmove = function(e){
+  e.preventDefault()
+}
 
 //初始化canvas
 var canvas = document.getElementById('canvas')
@@ -18,10 +21,9 @@ var start = { x: undefined, y: undefined }
 //获取节点
 var eraser = document.getElementById('eraser')
 var pen = document.getElementById('pen')
-var red = document.getElementById("red")
-var blue = document.getElementById("blue")
-var yellow = document.getElementById("yellow")
 var download = document.getElementById("download")
+var color = document.getElementById("color")
+
 
 //自适应画板大小
 resizeCanvas()
