@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  overflow: hidden;
+}
+#canvas{
+  display: block;
+  /* position: fixed;
+  left: 0;
+  top: 0; */
+}
+.icon {
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+svg{
+  height: 30px;
+  width: 30px;
+  fill: white;
+  vertical-align: top;
+  transition: all 0.2s;
+}
+svg.active{
+  fill: red;
+  transform: scale(1.2)
+}
+#pen{
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#eraser{
+  position: fixed;
+  left: 40px;
+  top: 0;
+}
+#clear{
+  position: fixed;
+  left: 80px;
+  top: 0;
+}
+#download{
+  position: fixed;
+  left: 120px;
+  top: 0;
+}
+.color{
+  position:fixed;
+  top: 40px;
+  left: 5px;
+}
+.color > li{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  transition: all 0.1s;
+}
+.color > li.active{
+  transform: scale(1.2);
+}
